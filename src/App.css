@@ -2,3 +2,8 @@
   width: 50%;
   margin: auto;
 }
+@media screen and (max-width: 600px) {
+  .App{
+    width: 90%;
+  }
+}

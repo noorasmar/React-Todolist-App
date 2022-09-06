@@ -10,13 +10,14 @@
   --font-dark-color: #2c3e50;
   --success-light-color: #2ecc71;
   --success-dark-color: #27ae60;
-  --fail-light-color: #e74c3c;
-  --fail-dark-color: #c0392b;
+  --delete-light-color: #e74c3c;
+  --delete-dark-color: #c0392b;
   --bg-input: #bdc3c7;
   --curve-border: 3px;
 }
 body{
   padding-top: 10%;
+  padding-bottom: 10%;
   background-image: linear-gradient(to right, #487eb0 , var(--main-light-color));
   font-family: 'Changa', sans-serif;
 }
