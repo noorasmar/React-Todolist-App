@@ -1,0 +1,67 @@
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-radius: var(--curve-border);
+    -webkit-border-radius: var(--curve-border);
+    -moz-border-radius: var(--curve-border);
+    -ms-border-radius: var(--curve-border);
+    -o-border-radius: var(--curve-border);
+    background-color: var(--main-light-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.name-task{ 
+    flex: 80%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    flex: 20%;
+}
+.btn > div{
+    padding: 10px 25px;
+    border: 1px solid;
+    border-radius: var(--curve-border);
+    -webkit-border-radius: var(--curve-border);
+    -moz-border-radius: var(--curve-border);
+    -ms-border-radius: var(--curve-border);
+    -o-border-radius: var(--curve-border);
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    cursor: pointer;
+}
+div.done{
+    border-color: var(--success-light-color);
+    color: var(--success-light-color);
+}
+div.done:hover{
+    border-color: var(--success-dark-color);
+    background-color: var(--success-dark-color);
+    color: #fff;
+}
+div.delete{
+    border-color: var(--delete-light-color);
+    color: var(--delete-light-color);
+}
+div.delete:hover{
+    border-color: var(--delete-dark-color);
+    background-color: var(--delete-dark-color);
+    color: #fff;
+}
+@media screen and (max-width: 768px) {
+    
+    .task{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
