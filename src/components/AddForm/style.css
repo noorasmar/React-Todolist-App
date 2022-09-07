@@ -9,20 +9,17 @@ form{
     -moz-border-radius: var(--curve-border);
     -ms-border-radius: var(--curve-border);
     -o-border-radius: var(--curve-border);
-    background-color: var(--main-light-color);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-h1{
+form h1{
     text-align: center;
     font-size: 2.5rem;
-    color: var(--font-dark-color);
 }
-label{
-    color: var(--font-dark-color);
+form label{
     font-size: 1.3rem;
     font-weight: bold;
 }
-input{
+form input{
     padding: 15px 20px;
     border-radius: var(--curve-border);
     -webkit-border-radius: var(--curve-border);
@@ -31,11 +28,11 @@ input{
     -o-border-radius: var(--curve-border);
     background-color: var(--bg-input);
 }
-input[type="text"]{
+form input[type="text"]{
     border: 1px solid var(--bg-input);
     font-size: 1.2rem;
 }
-input[type="submit"]{
+form input[type="submit"]{
     background-color: var(--success-light-color);
     border-color: var(--success-light-color);
     color: #fff;
@@ -43,7 +40,7 @@ input[type="submit"]{
     font-weight: bold;
     cursor: pointer;
 }
-input[type="submit"]:hover{
+form input[type="submit"]:hover{
     background-color: var(--success-dark-color);
     border-color: var(--success-dark-color);
 }
