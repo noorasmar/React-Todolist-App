@@ -21,3 +21,11 @@ body{
   background-image: linear-gradient(to right, #487eb0 , var(--main-light-color));
   font-family: 'Changa', sans-serif;
 }
+.light{
+  background-color: var(--main-light-color);
+  color: var(--font-dark-color);
+}
+.dark{
+  background-color: var(--main-dark-color);
+  color: var(--font-light-color);
+}
