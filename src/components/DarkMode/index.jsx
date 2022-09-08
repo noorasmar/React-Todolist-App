@@ -1,9 +1,9 @@
 import { useContext } from 'react';
-import {ModeContext} from '../../App'
+import {themeContext} from '../../context/ThemeContext'
 import './style.css'
 
-function DarkMode({setMode}) {
-    const mode = useContext(ModeContext);
+function DarkMode() {
+    const {mode, setMode} = useContext(themeContext);
     
     const hundler = ()=>{
         if(mode === 'light'){

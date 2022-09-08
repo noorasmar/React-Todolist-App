@@ -1,13 +1,14 @@
 import { useContext } from 'react';
-import {ModeContext} from '../../App'
+import {themeContext} from '../../context/ThemeContext'
 import './style.css'
 
-function Task() {
-    const mode = useContext(ModeContext);
+function Task({name, status}) {
+    const {mode} = useContext(themeContext);
+
     return ( 
         <div className={`task ${mode}`}>
             <div className='name-task'>
-                coding
+                {name}
             </div>
             <div className='btn'>
                 <div className="done">

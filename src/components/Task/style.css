@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 25px;
+    margin-bottom: 20px;
     border-radius: var(--curve-border);
     -webkit-border-radius: var(--curve-border);
     -moz-border-radius: var(--curve-border);

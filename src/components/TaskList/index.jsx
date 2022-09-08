@@ -1,10 +1,16 @@
+import { useContext } from 'react';
+import { taskContext } from '../../context/TaskContext';
 import Task from './../Task/index';
 import './style.css'
 
 function TaskList() {
+    const {task} = useContext(taskContext);
+    
     return ( 
         <main>
-            <Task />
+            {task.map((el)=>{
+                return <Task name={el.name} key={el.name} status={el.status}/>
+            })}
         </main>
     );
 }

@@ -1,21 +1,25 @@
-import { createContext, useState } from 'react';
+import {useState} from 'react';
+import {themeContext} from './context/ThemeContext'
+import {taskContext} from './context/TaskContext'
 import AddTask from './components/AddForm/index';
 import TaskList from './components/TaskList/index';
 import DarkMode from './components/DarkMode/index';
 import './App.css';
 
 
-export const ModeContext = createContext()
-
 function App() {
   const [mode, setMode] = useState('light')
+  const [task, setTask] = useState([])
+  
   return (
     <div className="App">
-        <ModeContext.Provider value={mode}>
-          <DarkMode setMode={setMode}/>
+        <themeContext.Provider value={{mode, setMode}}>
+          <taskContext.Provider value={{task, setTask}}>
+            <DarkMode/>
             <AddTask />
             <TaskList />
-        </ModeContext.Provider>
+          </taskContext.Provider>
+        </themeContext.Provider>
     </div>
   );
 }
