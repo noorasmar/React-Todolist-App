@@ -1,17 +1,27 @@
-import { useContext } from 'react';
-import {ModeContext} from '../../App'
+import { useContext, useState } from 'react';
+import {themeContext} from '../../context/ThemeContext'
+import { taskContext } from './../../context/TaskContext'
 import './style.css'
 
 function AddTask() {
-    const mode = useContext(ModeContext);
-    
+    const {mode} = useContext(themeContext);
+    const {task, setTask} = useContext(taskContext);
+    const [name, setName] = useState('')
+
+    const hundleAdd = ()=>{
+        if(name){
+            setTask([...task,{name: name, status: ''}])
+            setName('')
+        }
+    }
+
     return ( 
-        <form className={mode}>
+        <form className={mode} onSubmit={(e)=>{e.preventDefault();hundleAdd()}}>
             <h1 className={mode}>
                 Todo List App
             </h1>
             <label htmlFor="task" className={mode}>Task Name :</label>
-            <input type="text" id="task" placeholder="Coding..etc" autoFocus/>
+            <input type="text" id="task" onChange={(e)=>{setName(e.target.value)}} placeholder="Coding..etc" value={name} autoFocus/>
             <input type="submit" value="Add"/>
         </form>
     );

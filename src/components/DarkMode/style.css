@@ -1,24 +1,26 @@
 
 .container-btn{
-display: flex;
-justify-content: flex-end;
-margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
 }
 .container-btn input{
-display: none;
+    display: none;
 }
 .container-btn .switch{
-padding: 20px;
-border-radius: var(--curve-border);
--webkit-border-radius: var(--curve-border);
--moz-border-radius: var(--curve-border);
--ms-border-radius: var(--curve-border);
--o-border-radius: var(--curve-border);
-font-size: 1.2rem;
-font-weight: bold;
-transition: 0.3s all;
--webkit-transition: 0.3s all;
--moz-transition: 0.3s all;
--ms-transition: 0.3s all;
--o-transition: 0.3s all;
+    padding: 20px;
+    border-radius: var(--curve-border);
+    -webkit-border-radius: var(--curve-border);
+    -moz-border-radius: var(--curve-border);
+    -ms-border-radius: var(--curve-border);
+    -o-border-radius: var(--curve-border);
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
