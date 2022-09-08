@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { taskContext } from '../../context/TaskContext';
+import { taskContext } from '../../contexts/TaskContext';
 import Task from './../Task/index';
 import './style.css'
 

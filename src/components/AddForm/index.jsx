@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
-import {themeContext} from '../../context/ThemeContext'
-import { taskContext } from './../../context/TaskContext'
+import {themeContext} from '../../contexts/ThemeContext'
+import { taskContext } from './../../contexts/TaskContext'
 import './style.css'
 
 function AddTask() {

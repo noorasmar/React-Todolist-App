@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import {themeContext} from '../../context/ThemeContext'
+import {themeContext} from '../../contexts/ThemeContext'
 import './style.css'
 
 function DarkMode() {
