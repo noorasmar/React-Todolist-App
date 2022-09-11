@@ -8,9 +8,11 @@ function TaskList() {
     
     return ( 
         <main>
-            {task.map((el)=>{
-                return <Task name={el.name} key={el.name} status={el.status}/>
-            })}
+            {
+                task.map((el)=>{
+                    return <Task name={el.name} key={el.name} prstatus={el.status}/>
+                })
+            }
         </main>
     );
 }
