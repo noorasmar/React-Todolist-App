@@ -16,6 +16,9 @@
     font-size: 1.2rem;
     font-weight: 500;
 }
+.success{
+    text-decoration: line-through;
+}
 .btn{
     display: flex;
     justify-content: space-around;

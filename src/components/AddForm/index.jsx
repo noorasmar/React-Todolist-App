@@ -11,6 +11,11 @@ function AddTask() {
     const hundleAdd = ()=>{
         if(name){
             setTask([...task,{name: name, status: ''}])
+            if(!localStorage.getItem('task'))
+                localStorage.setItem('task',0)
+            else
+                localStorage.setItem('task', JSON.stringify([...task,{name: name, status: ''}]))
+                
             setName('')
         }
     }
